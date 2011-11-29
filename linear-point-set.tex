@@ -1,0 +1,105 @@
+\documentclass{article}
+\usepackage{amsthm}
+\usepackage{enumerate}
+
+\theoremstyle{definition}
+\newtheorem{axiom}{Axiom}
+\newtheorem{theorem}{Theorem}
+\theoremstyle{definition}
+\newtheorem{example}{Example}
+\newtheorem{problem}{Problem}
+\theoremstyle{plain}
+
+\title{\textbf{\textsf{Linear Point Set Theory}}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Order Properties}
+
+\paragraph{Undefined Terms:} The word ``point'' and the expression ``the point
+$x$ precedes the point $y$'' will not be defined.  This undefined expression
+will be written $x < y$.
+
+In these notes, all sets have at least one element.  By ``point $x$ follows the
+point $y$'' we mean $y < x$.  By $x \leq y$ we mean that $x < y$ or $x = y$.
+
+\begin{axiom}
+  $S$ is a collection of points such that
+  \begin{enumerate}[a.]
+    \item if $x$ and $y$ are different points, then $x < y$ or $y < x$.
+    \item if the point $x$ precedes the point $y$, then $x$ is not equal to $y$.
+    \item if $x$, $y$, and $z$ are points such that $x < y$ and $y < z$, then $x < z$.
+  \end{enumerate}
+
+\end{axiom}
+
+In case a misunderstanding persists concerning the relationship between
+``point'', ``point set'', and $S$, let it be clear that, unless there is a
+stipulation to the contrary, that
+
+\begin{itemize}
+  \item ``point'' always means a member of $S$.
+  \item ``point set'' means a nonempty set of points in $S$ or a nonempty subset of $S$.
+  \item $S$ is the universal set, that is, the set of all points.
+\end{itemize}
+
+\begin{example}
+  Suppose by ``point'' we mean any integer and by ``$x$ precedes $y$'' we mean
+  the normally understood ``$x$ is less than $y$.''  Clearly Axiom 1 is
+  satisfied.
+\end{example}
+
+\begin{example}
+  Suppose by ``point'' we mean a number depicted below and by ``$x$ precedes
+  $y$'' we mean that $x$ is to the left sf $y$ on the number line.
+\end{example}
+
+\begin{example}
+  Suppose by ``point'' we mean a number depicted below and by ``$x$ precedes
+  $y$'' we mean that $x$ is to the left of $y$ on the number line.  See below:
+  \[3 \qquad -2 \qquad 1 \qquad 5 \qquad -7.1 \qquad 7 \qquad 6\]
+  Is this a model of Axiom 1?
+\end{example}
+
+\begin{problem}
+  Think of a particular dictionary of English words.  Suppose by ``point'' we
+  mean any word in that dictionary.  What interpretation could you give to
+  ``precedes'' so that Axiom 1 is satisfied?
+\end{problem}
+
+\begin{problem}
+  Consider the HFD Corporation, the world's largest corporation that hires
+  thousands of people every year.  Suppose by ``point'' we mean an employee of
+  HFD.  By ``$x$ precedes $y$'' we mean that employee $x$ was hired on at HFD
+  before employee $y$.  Are Axioms 1a, 1b, and 1c all satisfied? Explain.
+\end{problem}
+
+\begin{problem}
+  Find an interpretation for Axiom 1 such that Axiom 1a and 1c are satisfied,
+  but 1b is not satisfied.
+\end{problem}
+
+\begin{problem}
+  Give a model of Axiom 1 where ``point'' means integer and ``$x$ precedes
+  $y$'' is defined in such a way that 0 precedes all other integers.
+\end{problem}
+
+When we have found meanings for the undefined terms of our axiom system such
+that the axioms of our system are satisfied as we did in Examples 1 and 2
+above, we have a \emph{model} of the axiom system.
+
+\begin{problem}
+  Give a meaning sf ``precedes'' where ``point'' means an ordered number pair
+  and Axiom 1 is satisfied.  State what a typical region would look like.
+\end{problem}
+
+\begin{theorem}
+  If $x$ and $y$ are different points such that $x < y$, then $y \not< x$.
+\end{theorem}
+
+
+\end{document}
+
+% vim: tw=79
