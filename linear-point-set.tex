@@ -3,6 +3,8 @@
 \usepackage{enumerate}
 
 \theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\newtheorem{question}{Question}
 \newtheorem{axiom}{Axiom}
 \newtheorem{theorem}{Theorem}
 \theoremstyle{definition}
@@ -99,6 +101,345 @@ above, we have a \emph{model} of the axiom system.
   If $x$ and $y$ are different points such that $x < y$, then $y \not< x$.
 \end{theorem}
 
+\begin{problem}
+  Consider the diagram below.
+
+  Suppose by ``point'' we mean a point on the diagram.  By ``$x$ precedes $y$''
+  we mean that the point $x$ on the diagram is to the left of the point $y$ on
+  the diagram.  What parts of Axiom 1, if any, are not satisfied?
+\end{problem}
+
+\begin{problem}
+  Can Theorem 1 be proved without Axiom 1c?  Explain.
+\end{problem}
+
+\begin{definition}
+  If $c$ is a point of a point set $M$ such that no point of $M$ precedes $c$,
+  then $c$ is called a \emph{first point} of $M$.  Define \emph{last point}
+  similarly.
+\end{definition}
+
+\begin{problem}
+  Does the model of Example 2 have a first point?  A last point? Explain.
+\end{problem}
+
+\begin{theorem}
+  No point set has two first (last) points.
+\end{theorem}
+
+\begin{theorem}
+  If $M$ is a finite set then $M$ has a first point and a last point.
+\end{theorem}
+
+\begin{theorem}
+  If $M$ is a set consisting sf $n$ members, then $M$ can be written as $\{x_1,
+  x_2, \cdots, x_n\}$ where $x_1 < x_2 < \cdots < x_n$.
+\end{theorem}
+
+\begin{problem}
+  Give a model for the present axiom system such that $S$ has a first point and
+  a last point.
+\end{problem}
+
+\begin{axiom}
+  $S$ has no first point and no last point.
+\end{axiom}
+
+\begin{definition}
+  If $x < z$ and $z < y$, then $z$ is said to be \textbf{between} $x$ and $y$.
+  Moreover, when $x < y$ and there is a point between $x$ and $y$, the point
+  set consisting of all points between $x$ and $y$ is called a \textbf{region}
+  and will be referred to as the \textbf{region} $xy$.
+\end{definition}
+
+\begin{theorem}
+  If $x$ is a point, then there is a region containing $x$.
+\end{theorem}
+
+\begin{question}
+  Is Theorem 5 equivalent to Axiom 2?
+\end{question}
+
+\begin{problem}
+  Suppose ``point'' means a point on the unit circle.  Show that there is a
+  meaning of ``precedes'' such that Axioms 1 and 2 are true.
+\end{problem}
+
+\begin{theorem}
+  If $x$ belongs to each of two regions $R_1$ and $R_2$ then there is a region
+  $R_3$ containing $x$ that is a subset of each of $R_1$ and $R_2$.
+\end{theorem}
+
+\begin{theorem}
+  If the point $x$ belongs to each member of a finite collection of regions,
+  then there is some region containing $x$ which is a subset of each member of
+  the collection.
+\end{theorem}
+
+\begin{definition}
+  Two point sets are said to be \textbf{mutually exclusive} or
+  \textbf{disjoint} if they have no points in common.  If $G$ is a collection
+  of the point sets such that each two of them are mutually exclusive, then the
+  sets of $G$ are said to be \textbf{pairwise mutually exclusive}.
+\end{definition}
+
+\begin{theorem}
+  If $x$ and $y$ are different points, then there are two disjoint regions
+  $R_x$ and $R_y$ where $R_x$ contains $x$ and $R_y$ contains $y$.
+\end{theorem}
+
+\section*{Limit Points}
+
+\begin{definition} 
+  A point $p$ is said to be a \textbf{limit point} of a point set $M$ if every
+  region containing $p$ contains a point $M$ distinct from $p$.
+\end{definition}
+
+\begin{problem}
+  Complete The statement ``a point $p$ is not a limit point of a point set
+  $M$'' means \ldots
+\end{problem}
+
+\begin{theorem}
+  If the point set $H$ is a subset of the point set $K$ and $p$ is a limit
+  point of $H$, then $p$ is a limit point of $K$.
+\end{theorem}
+
+\begin{theorem}
+  If the point $p$ is a limit point of $H \cup K$ where $H$ and $K$ are point
+  sets, then $p$ is a limit point of $H$ or $p$ is a limit point of $K$.
+\end{theorem}
+
+\begin{theorem}
+  If $p$ is the limit point of the union of a finite collection $G$ of point
+  sets, then $p$ is a limit point of at least one member of $G$.
+\end{theorem}
+
+\begin{theorem}
+  No finite point set has a limit point.
+\end{theorem}
+
+\begin{definition}
+  A point set is said to be \textbf{infinite} if it is not finite.
+\end{definition}
+
+\begin{problem}
+  Prove that $p$ is a limit point of the given set $M$ in each example below.
+
+  \begin{enumerate}[a.]
+    \item $p = 0$ and $M = (0,1]$.
+    \item $p = 0.5$ and $M = [0,1]$.
+    \item $p = 1$ and $M$ is the set of all real numbers.
+    \item $p = 0$ and $M = \{1, 1/2, 1/3, \cdots \}$.
+  \end{enumerate}
+
+\end{problem}
+
+\begin{problem}
+  Using the numbers as the model, which of the following are true and which are
+  not true?
+  \begin{enumerate}[a.]
+    \item Some finite point set has a limit point.
+    \item Any infinite number set $M$ has a limit point.
+    \item Any subset of $(a,b)$ has a limit point.
+    \item All limit points of a given set belong to the set.
+  \end{enumerate}
+\end{problem}
+
+\begin{problem}
+  Suppose there is a smallest positive number.
+
+  \begin{enumerate}[a.]
+    \item Prove that the set of all real numbers has no limit point.
+    \item Prove that the square root of 2 does not exist.
+    \item Prove that there are no irrational numbers.
+  \end{enumerate}
+\end{problem}
+
+\begin{problem}
+  Let $A = \{x : x \textnormal{ is less than zero} \}$ and $B = \{ x : x
+  \textnormal{ is greater than or equal to 1} \}$.  By ``point'' we mean a member of
+  $A$ or $B$. By ``precedes'' we mean the natural order of numbers.  Prove that
+  1 is a limit point of $A$.
+\end{problem}
+
+\begin{theorem}
+  If the point $p$ is a limit point of $H \cup K$ where $H$ is a point set and
+  $K$ is a finite point set, then $p$ is a limit point of $H$.
+\end{theorem}
+
+\begin{theorem}
+  If $p$ is a limit point of the point set $M$, then each region containing $p$
+  contains infinitely many points of $M$.
+\end{theorem}
+
+\section*{Infinite Sequences}
+
+The following definition is supplied for completeness.  The reader will find
+that the precise definition of infinite sequence, unlike the other definitions
+in these notes, does not supply much illumination on the concept.  It works
+just as well if one just assumes some primitive or informal notion of infinite
+sequence or list which never ends.
+
+\begin{definition}
+  An \textbf{infinite sequence} $p$ in $S$ is a function with domain the
+  positive integers and range a subset of $S$. If $n$ is a positive integer,
+  then $p_n$ denotes the second member of an ordered pair whose first member is
+  $n$.  Moreover, we denote the sequence $p$ as $p_1, p_2, p_3, \cdots$. That
+  is, we think of $p$ as a subset of $S$ with each positive integer matched to
+  exactly one point in $p$.
+\end{definition}
+
+\begin{definition}
+  Suppose $p_1, p_2, p_3, \cdots$ is an infinite sequence of points. Then a
+  \textbf{k-tail} of $p_1, p_2, p_3, \cdots$ is the sequence $p_k, p_{k+1},
+  p_{k+2}, \cdots$ where $k$ is some positive integer.
+\end{definition}
+
+\begin{definition}
+  An infinite sequence of points $p_1, p_2, p_3, \cdots$ is said to
+  \textbf{converge} to a point $L$ if and only if each region $R$ containing
+  $L$ contains all but finitely many terms of the infinite sequence.
+\end{definition}
+
+\begin{question}
+  \begin{enumerate}
+    \item Does every infinite sequence have a first or a last point?
+    \item Does every bounded infinite sequence have a first or a last point?
+    \item Does every convergent infinite sequence have a first or a last point?
+  \end{enumerate}
+\end{question}
+
+\begin{definition}
+  An infinite sequence of points $p_1, p_2, p_3, \cdots$ is said to be a
+  \textbf{non-decreasing} sequence if $p_n \leq p_{n+1}$ for each positive
+  integer $n$.  \textbf{Nondecreasing} is defined similarly.  An infinite
+  sequence is said to be \textbf{monotonic} if and only if it is nonincreasing
+  or it is nondecreasing.  The infinite sequence of points $p_1, p_2, p_3,
+  \cdots$ is said to be \textbf{increasing} if $p_n < p_{n+1}$ for each
+  positive integer $n$.  \textbf{Decreasing} is defined similarly.
+\end{definition}
+
+\begin{question}
+  Is it true that if $f$ is an infinite sequence the nthere is a monotonic
+  subsequence $g$ and a monotonic subsequence $h$ such that $f = g \cup h$?
+\end{question}
+
+\begin{theorem}
+  No sequence of points converges to each of two different points.
+\end{theorem}
+
+\begin{theorem}
+  If $p_1, p_2, p_3, \cdots$ is an infinite sequence of distinct points
+  converging to the point $L$, then $L$ is the only limit point of the set
+  \{$p_1, p_2, p_3, \cdots$\}.
+\end{theorem}
+
+\begin{theorem}
+  If $p_1, p_2, p_3, \cdots$ is an infinite sequence of points convergent to a
+  point $L$, then some region contains the entire infinite sequence.
+\end{theorem}
+
+\section*{Closed, Closure, and Open}
+
+\begin{definition}
+  The statement that a point set $M$ is \textbf{closed} means that if $p$ is a
+  limit point of $M$, then $p$ belongs to $M$.
+\end{definition}
+
+\paragraph{Notation.}  Suppose $H$ is a point set.  If $H$ has a limit point,
+then $H'$ denotes the set of all limit points of $H$.  Also $\bar{H}$
+(read ``H-bar'') denotes $H$ together with all of its limit points and is
+called the \textbf{closure} of $H$ (not to be confused with ``closed'' below).
+Note that $\bar{H} = H \cup H'$.
+
+\begin{problem}
+  Develop some conjectures concerning $\bar{H}$ and $H'$.
+\end{problem}
+
+\begin{problem}
+  Define ``boundary point of a set'' and create some theorems concerning your
+  definition.
+\end{problem}
+
+\begin{problem}
+  Suppose $M$ is a point set.  Prove or disprove that
+  \begin{enumerate}
+    \item $M$ is closed if and only if $M' \subset M$.
+    \item $M$ is close if and only if $\bar{M} = M$.
+    \item $(\bar{M})' = \bar{M}$.
+  \end{enumerate}
+\end{problem}
+
+\begin{theorem}
+  \textbf{[CRITICAL]} If $H$ is a point set, then $\bar{H}$ is closed.
+\end{theorem}
+
+\begin{definition}
+  A point set $H$ is said to be \textbf{open} if for every point $x$ of $H$
+  there is a region $R$ containing $x$ such that $R$ is a subset of $H$.
+\end{definition}
+
+\begin{theorem}
+  Every region is open.
+\end{theorem}
+
+\begin{problem}
+  Give an example of a number set that is not open and not closed.
+\end{problem}
+
+\begin{theorem}
+  If $x$ is a point, then the set of all points that precede $x$ is an open
+  set.  Moreover, if $x$ is a point, then the set of all points that follow $x$
+  is an open set.
+\end{theorem}
+
+\begin{definition}
+  If $x < y$, then the set consisting of $x$ and $y$ together with all the
+  points between $x$ and $y$ is called the \textbf{interval} $xy$.
+\end{definition}
+
+\begin{theorem}
+  Every interval is closed.
+\end{theorem}
+
+\begin{theorem}
+  \textbf{[CRITICAL]} If the open set $M$ is a proper subset of $S$, then $S -
+  M$ is closed.
+\end{theorem}
+
+\begin{theorem}
+  \textbf{[CRITICAL]} If the closed set $M$ is a proper subset of $S$, then $S
+  - M$ is open.
+\end{theorem}
+
+\begin{problem}
+  Give a model of Axioms 1 and 2 in which there is a proper subset that is both
+  open and closed.
+\end{problem}
+
+\begin{theorem}
+  If $G$ is a collection of open sets, the $\cup G$ is open.
+\end{theorem}
+
+\begin{theorem}
+  If $G$ is a collection of closed sets having a common point, then $\cap G$ is
+  closed.
+\end{theorem}
+
+\begin{theorem}
+  If $G$ is a finite collection of open sets having a common point, then $\cap
+  G$ is open.
+\end{theorem}
+
+\begin{theorem}
+  If $G$ is a finite collection of closed sets, then $\cup G$ is closed.
+\end{theorem}
+
+\begin{problem}
+  Does there exist a subset of the real numbers that contains no interval, is
+  closed, and each point of the set is a limit point of the set?
+\end{problem}
 
 \end{document}
 
