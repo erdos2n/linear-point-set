@@ -7,6 +7,7 @@
 \newtheorem{question}{Question}
 \newtheorem{axiom}{Axiom}
 \newtheorem{theorem}{Theorem}
+\newtheorem{crit-theorem}{*Theorem}
 \theoremstyle{definition}
 \newtheorem{example}{Example}
 \newtheorem{problem}{Problem}
@@ -303,7 +304,7 @@ sequence or list which never ends.
 \end{definition}
 
 \begin{question}
-  \begin{enumerate}
+  \begin{enumerate}[a.]
     \item Does every infinite sequence have a first or a last point?
     \item Does every bounded infinite sequence have a first or a last point?
     \item Does every convergent infinite sequence have a first or a last point?
@@ -364,7 +365,7 @@ Note that $\bar{H} = H \cup H'$.
 
 \begin{problem}
   Suppose $M$ is a point set.  Prove or disprove that
-  \begin{enumerate}
+  \begin{enumerate}[a.]
     \item $M$ is closed if and only if $M' \subset M$.
     \item $M$ is close if and only if $\bar{M} = M$.
     \item $(\bar{M})' = \bar{M}$.
@@ -372,7 +373,7 @@ Note that $\bar{H} = H \cup H'$.
 \end{problem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If $H$ is a point set, then $\bar{H}$ is closed.
+  If $H$ is a point set, then $\bar{H}$ is closed.
 \end{theorem}
 
 \begin{definition}
@@ -404,12 +405,12 @@ Note that $\bar{H} = H \cup H'$.
 \end{theorem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If the open set $M$ is a proper subset of $S$, then $S -
+  If the open set $M$ is a proper subset of $S$, then $S -
   M$ is closed.
 \end{theorem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If the closed set $M$ is a proper subset of $S$, then $S
+   If the closed set $M$ is a proper subset of $S$, then $S
   - M$ is open.
 \end{theorem}
 
@@ -464,7 +465,7 @@ Note that $\bar{H} = H \cup H'$.
 \end{theorem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If $M$ is a connected point set, then $\bar{M}$ is
+  If $M$ is a connected point set, then $\bar{M}$ is
   connected.
 \end{theorem}
 
@@ -474,12 +475,12 @@ Note that $\bar{H} = H \cup H'$.
 \end{theorem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If $x$ and $y$ are two distinct points of a connected
+   If $x$ and $y$ are two distinct points of a connected
   point set $M$, then the interval $xy$ is a subset of $M$.
 \end{theorem}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If the point set $M$ is not connected, then $M$ is the
+   If the point set $M$ is not connected, then $M$ is the
   union of two mutually separated sets $H$ and $K$ such that every point of $H$
   precedes every point of $K$.
 \end{theorem}
@@ -490,7 +491,7 @@ Note that $\bar{H} = H \cup H'$.
 \end{axiom}
 
 \begin{theorem}
-  \textbf{[CRITICAL]} If $H$ and $K$ are two point sets such that \mbox{$H \cup K =
+   If $H$ and $K$ are two point sets such that \mbox{$H \cup K =
   S$} and every point of $H$ precedes every point of $K$, then either $H$ has a
   last point or $K$ has a first point.  Furthermore, if $H$ has a last point,
   then $K$ does not have a first point.
@@ -534,6 +535,243 @@ Note that $\bar{H} = H \cup H'$.
 
 \begin{theorem}
   $S$ contains infinitely many points and every point is a limit point of $S$.
+\end{theorem}
+
+\section*{Least Upper Bounds}
+
+\begin{definition}
+  A point set $M$ is said to have an \textbf{upper bound} if there is some
+  point $U$ (called an upper bound of $M$) such that $x \leq U$ for each $x$ in
+  $M$.  \textbf{Lower bound} is defined similarly.
+\end{definition}
+
+\begin{definition}
+  The statement that $L$ is a \textbf{least upper bound} of the point set $M$
+  means that $L$ is an upper bound of $M$ and no upper bound of $M$ precedes
+  $L$.  \textbf{Greatest lower bound} is defined similarly.
+\end{definition}
+
+\begin{theorem}
+  If each of $L_1$ and $L_2$ is a least upper bound of the point set $M$, then
+  $L_1 = L_2$.  A similar statement is true for greatest lower bounds.
+\end{theorem}
+
+\begin{theorem}
+  If $L$ is the least upper bound of a point set $M$ that does not contain $L$,
+  then $L$ is a limit point of $M$.
+\end{theorem}
+
+\begin{theorem}
+  If $M$ is a point set with an upper bound, then $M$ has a least upper bound.
+  Also, if $M$ is a point set with a lower bound, then $M$ has a greatest lower
+  bound.
+\end{theorem}
+
+\begin{definition}
+  An infinite sequence of points $p_1, p_2, p_3, \cdots$ is said to an
+  \textbf{increasing} sequence if $p_n < p_{n+1}$ for each positive integer
+  $n$.
+\end{definition}
+
+\begin{theorem}
+  Every bounded increasing sequence of points converges.
+\end{theorem}
+
+\begin{definition}
+  A collection $G$ of sets is said to \textbf{cover} a point set $M$ if every
+  point of $M$ is in at least one set of $G$, that is, $M$ is a subset of $\cup
+  G$.  If some subcollection $G'$ of $G$ covers $M$, then $G'$ is said to be a
+  \textbf{subcover} of $G$.  If $G$ is a collection of regions, then $G$ is
+  said to be a \textbf{region cover}.  If $G$ is a collection of open sets,
+  then $G$ is said to be an \textbf{open cover}.
+\end{definition}
+
+\begin{theorem}
+  A point set has a region cover if and only if it has an open cover.
+\end{theorem}
+
+\begin{theorem}
+  If $G$ is a collection of regions where each point of the interval $ab$ is
+  contained in at most finitely many members of $G$, then there is a finite
+  subcollection of $G$ which covers interval $ab$.
+\end{theorem}
+
+\begin{problem}
+  Let $G$ be a collection of regions that covers the interval $ab$.
+  \begin{enumerate}[a.]
+    \item Suppose the subcollection $G'$ of $G$ which covers \{a\} does not
+      cover $ab$.  Prove that the set of right hand endpoints of members of
+      $G'$ has a least upper bound $L$ which precedes $b$.
+    \item Prove that the interval $aL$ is covered by a finite subcollection of
+      $G$.
+  \end{enumerate}
+\end{problem}
+
+\begin{question}
+  Suppose $G$ is an infinite collection of regions covering the interval $ab$.
+  Let $M$ be the set of all points $x$ in the interval $ab$ which (i) are not
+  the point $a$ and (ii) finitely many members of $G$ cover the interval $ax$.
+  \begin{enumerate}[a.]
+    \item Is $M$ empty?  Prove your answer.
+    \item Does $b$ belong to $M$? Prove your answer.
+  \end{enumerate}
+\end{question}
+
+\begin{definition}
+  A point set $M$ is said to be \textbf{compact} if and only if each open cover
+  of $M$ contains a finite subcover of $M$.
+\end{definition}
+
+\begin{theorem}
+  If $G$ is a collection of regions covering the interval $ab$, then there is
+  some finite subcollection of $G$ that covers the interval $ab$.
+\end{theorem}
+
+\begin{theorem}
+  Strengthen Theorem 49 by letting $G$ be an open cover.
+\end{theorem}
+
+\begin{theorem}
+  Each closed and bounded point set of $M$ is compact.
+\end{theorem}
+
+\begin{theorem}
+  Every bounded infinite point set has a limit point.
+\end{theorem}
+
+\begin{theorem}
+  Every closed and bounded point set contains a first point and a last point.
+\end{theorem}
+
+\begin{theorem}
+  If $M_1, M_2, M_3, \cdots$ is an infinite sequence of closed and bounded
+  point sets such that for each $n$, $M_n$ contains $M_{n+1}$, then the sets
+  have a point in common.  Furthermore, the set of all points common to these
+  sets is closed.
+\end{theorem}
+
+\begin{theorem}
+  If $M$ is an infinite set of points, then there is an increasing or a
+  decreasing sequence of points in $M$.
+\end{theorem}
+
+\begin{definition}
+  A point set $M$ is said to be \textbf{countable} if $M$ is either finite or
+  $M = \{p_1, p_2, p_3, \cdots\}$ where $p_1, p_2, p_3, \cdots$ is an infinite
+  sequence of distinct elements.
+\end{definition}
+
+\begin{problem}
+  Give some examples of countable sets.
+\end{problem}
+
+\begin{problem}
+  Show that the set $M = \{(m,n) | m \textrm{and} n \textrm{are positive
+  integers}\}$ is countable.  Start by drawing a graph of $M$.
+\end{problem}
+
+\begin{problem}
+  Show that the set of rational numbers is countable.
+\end{problem}
+
+\begin{problem}
+  Show that the union of two disjoint infinite countable sets is countable.
+\end{problem}
+
+\begin{problem}
+  Show that the union of countably many countable sets is countable.
+\end{problem}
+
+\begin{definition}
+  A point set $M$ is said to be \textbf{uncountable} if $M$ is not countable.
+\end{definition}
+
+\begin{problem}
+  Show that the assumption that the set of all sequences of zeros and ones is
+  not countable leads to a contradiction.
+\end{problem}
+
+\begin{definition}
+  A collection $G$ of sets is said to be \textbf{monotonic} if and only if
+  given two members of $G$, one is a subset of the other.
+\end{definition}
+
+\begin{definition}
+  The point set $M$ is said to be \textbf{perfectly compact} if and only if for
+  each monotonic collection $Q$ of subsets of $M$, some point belongs to each
+  member of $Q$ or some point is a limit point of each member of $Q$.
+\end{definition}
+
+\begin{theorem}
+  Each perfectly compact point set is compact.
+\end{theorem}
+
+\begin{question}
+  Is each compact set perfectly compact?
+\end{question}
+
+\begin{definition}
+  A point set $M$ is said to be \textbf{perfect} if $M$ is closed and every
+  point of $M$ is a limit point of $M$.
+\end{definition}
+
+\begin{theorem}
+  No countable point set is perfect.
+\end{theorem}
+
+\begin{problem}
+  The set of numbers is uncountable.
+\end{problem}
+
+\begin{theorem}
+  Every region is uncountable.
+\end{theorem}
+
+\begin{theorem}
+  Every uncountable point set has a limit point.
+\end{theorem}
+
+\begin{definition}
+  A point set $M$ is said to be \textbf{nowhere dense} in a point set $K$ if
+  every region intersecting $K$ contains a region that intersects $K$ but not
+  $M$.
+\end{definition}
+
+\begin{theorem}
+  If the point set $H$ is nowhere dense in the point set $K$, then every subset
+  of $H$ is nowhere dense in $K$.
+\end{theorem}
+
+\begin{theorem}
+  If each of the point sets $H$ and $K$ is nowhere dense in the point set $M$,
+  then $H \cup K$ is nowhere dense in $M$.
+\end{theorem}
+
+\begin{theorem}
+  No region is the union of a countable number of point sets such that each of
+  them is nowhere dense in $S$.
+\end{theorem}
+
+\begin{theorem}
+  No closed point set $M$ is the union of a countable number of closed point
+  sets such that if $X$ is any one of them, then every point of $X$ is a limit
+  point of $M - X$.
+\end{theorem}
+
+\begin{theorem}
+  No closed point set $M$ is the union of a countable number of point sets such
+  that each of them is nowhere dense in $M$.
+\end{theorem}
+
+\begin{definition}
+  Suppose $K$ is a point set.  A point set $H$ is said to be \textbf{everywhere
+  dense} in $K$ if and only if $H$ is a subset of $K$ and every point of $K$ is
+  a point of $H$ or is a limit point of $H$.
+\end{definition}
+
+\begin{theorem}
+  If the point set $H$ is everywhere dense in the point set $K$, then every
+  region intersecting $K$ contains a point of $H$.
 \end{theorem}
 
 \end{document}
